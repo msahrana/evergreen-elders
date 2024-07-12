@@ -2,6 +2,7 @@ import {Link, useLocation, useNavigate} from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import toast from "react-hot-toast";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
+import LogoImg from "/auth.jpg";
 
 const Register = () => {
   const {createUser, updateUser, setLoading, user, setUser} = useAuth();
@@ -41,11 +42,7 @@ const Register = () => {
   return (
     <div className="w-full max-w-sm p-6 m-auto mx-auto bg-white rounded-lg shadow-md dark:bg-gray-800">
       <div className="flex justify-center mx-auto">
-        <img
-          className="w-auto h-7 sm:h-8"
-          src="https://merakiui.com/images/logo.svg"
-          alt=""
-        />
+        <img className="w-16 h-16 rounded-full" src={LogoImg} alt="image" />
       </div>
 
       <form onSubmit={handleRegister} className="mt-6">
