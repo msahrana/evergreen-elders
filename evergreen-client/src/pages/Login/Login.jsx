@@ -25,7 +25,7 @@ const Login = () => {
   };
 
   return (
-    <div className=" min-h-[calc(100vh-306px)]">
+    <div className=" min-h-[calc(100vh-244px)]">
       <div className="w-full max-w-sm p-6 m-auto mx-auto bg-white rounded-lg shadow-md dark:bg-gray-800">
         <div className="flex justify-center mx-auto">
           <img className="w-16 h-16 rounded-full" src={LogoImg} alt="image" />

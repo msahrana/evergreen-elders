@@ -1,17 +1,16 @@
+import {Link} from "react-router-dom";
+import Logo from "/evergreen-elders.png";
+
 const Footer = () => {
   return (
     <footer className="bg-blue-100 dark:bg-gray-900">
       <div className="container px-6 py-8 mx-auto">
         <div className="flex flex-col items-center text-center">
-          <a href="#">
-            <img
-              className="w-auto h-7"
-              src="https://merakiui.com/images/full-logo.svg"
-              alt=""
-            />
-          </a>
+          <Link to="/">
+            <img className="size-16 rounded-full" src={Logo} alt="" />
+          </Link>
 
-          <div className="flex flex-wrap justify-center mt-6 -mx-4">
+          <div className="flex flex-wrap justify-center mt-2 -mx-4">
             <a
               href="#"
               className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
@@ -58,8 +57,6 @@ const Footer = () => {
             </a>
           </div>
         </div>
-
-        <hr className="my-6 border-gray-200 md:my-10 dark:border-gray-700" />
 
         <div className="flex flex-col items-center sm:flex-row sm:justify-between">
           <p className="text-sm text-gray-500 dark:text-gray-300">

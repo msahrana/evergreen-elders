@@ -10,7 +10,7 @@ const Navbar = () => {
     <div className="navbar bg-base-100">
       <div className="flex-1">
         <Link>
-          <img className="w-12" src={Logo} alt="" />
+          <img className="w-12 rounded-full" src={Logo} alt="" />
         </Link>
       </div>
       <div className="flex-none gap-2">
